@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 // theme base preparation
 @import "fonts";
 @import "normalize";
@@ -22,3 +24,20 @@ $theme-inverse-color: {{ default "#ffffff" .Site.Params.themeInverseColor }};
 @import "taxonomy";
 @import "pagination";
 @import "curriculum";
+
+table.opening-times {
+    width: 100%;
+
+    td {
+        padding: 0 1em;
+        width: 50%;
+
+        &.left {
+            text-align: left
+        }
+
+        &.right {
+            text-align: right
+        }
+    }
+}
